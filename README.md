@@ -1,3 +1,3 @@
 # SecurityTest
 
-a demo project to test authentication and http authorization
+a demo project to test spring security -- authentication and http authorization
