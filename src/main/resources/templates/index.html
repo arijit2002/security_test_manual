@@ -10,8 +10,8 @@ crossorigin="anonymous">
 <body>
 	<nav class="navbar fixed-top bg-dark">
   		<div class="container-fluid">
-    		<a class="navbar-brand text-light bg-dark" href="#">Fixed top</a>
-    		<a class="navbar-brand text-light bg-dark" href="/user">User Page</a>
+    		<a class="navbar-brand text-light bg-dark" th:href=@{/index}>Home</a>
+    		<a class="navbar-brand text-light bg-dark" th:href=@{/user}>User Page</a>
     		<a class="navbar-brand text-light bg-dark" href="#">Admin Page</a>
   		</div>
 	</nav>
