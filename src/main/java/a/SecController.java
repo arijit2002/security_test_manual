@@ -22,6 +22,12 @@ public class SecController {
 		return "<h1>This is the User Page!!!!! U are " + username.toUpperCase() + "</h1>"
 				+ "<form action=\"logout\"><button>Logout from Here</button></form>";
 	}
+	
+	@GetMapping("/try")
+	public String trying() {
+		return "trying";
+	}
+	
 	@GetMapping("/admin")
 	public String admin(@AuthenticationPrincipal User user) {
 		String username = user.getUsername();
