@@ -23,9 +23,9 @@ public class SecController {
 				+ "<form action=\"logout\"><button>Logout from Here</button></form>";
 	}
 	
-	@GetMapping("/try")
+	@GetMapping("/index")
 	public String trying() {
-		return "trying";
+		return "index";
 	}
 	
 	@GetMapping("/admin")
