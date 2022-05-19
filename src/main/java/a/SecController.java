@@ -28,4 +28,5 @@ public class SecController {
 	public String accessdeniedpage() {
 		return "accessdenied";
 	}
+
 }
