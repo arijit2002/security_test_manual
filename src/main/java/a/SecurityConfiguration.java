@@ -37,6 +37,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			.antMatchers("/login").permitAll()
 			.anyRequest().authenticated()
 			.and()
-			.formLogin();
+			.formLogin()
+			.and()
+			.exceptionHandling().accessDeniedPage("/accessdenied");
 	}
 }
