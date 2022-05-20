@@ -31,14 +31,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http)throws Exception{
 		http
 			.authorizeRequests()
-			.antMatchers("/").permitAll()
+			.antMatchers("/","/acccessdenied","/login").permitAll()
 			.antMatchers("/user").hasAnyRole("user","admin")
 			.antMatchers("/admin").hasRole("admin")
-			.antMatchers("/login").permitAll()
 			.anyRequest().authenticated()
 			.and()
 			.formLogin();
-		//	.and()
-		//	.exceptionHandling().accessDeniedPage("/accessdenied");
 	}
 }

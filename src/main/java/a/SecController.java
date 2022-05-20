@@ -23,10 +23,5 @@ public class SecController {
 	public String admin(@AuthenticationPrincipal User user) {
 		return "admin";
 	}
-	
-	@GetMapping("/accessdenied")
-	public String accessdeniedpage() {
-		return "accessdenied";
-	}
 
 }
