@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
 <meta charset="ISO-8859-1">
 <title>Spring Security</title>
@@ -49,6 +51,13 @@ crossorigin="anonymous">
 			    </tr>
   			</tbody>
 		</table>
+		<div sec:authorize="hasRole('admin')">
+			<ul>
+			  <li>Coffee</li>
+			  <li>Tea</li>
+			  <li>Milk</li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
