@@ -23,5 +23,10 @@ public class SecController {
 	public String admin(@AuthenticationPrincipal User user) {
 		return "admin";
 	}
+	
+	@GetMapping("/testing")
+	public String testing(@AuthenticationPrincipal User user) {
+		return "testing";
+	}
 
 }
